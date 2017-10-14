@@ -1,0 +1,21 @@
+{
+    "name": "marcus-campos/simple-bot",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Marcus Vinícius Campos",
+            "email": "marcus_vinicius_campos@hotmail.com"
+        }
+    ],
+    "require": {
+        "marcus-campos/anybot-sdk": "^0.3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SimpleBot\\SimpleBotProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
