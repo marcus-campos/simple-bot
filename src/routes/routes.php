@@ -10,4 +10,6 @@ Route::group(['prefix' =>'app/marcus-campos/simple-bot'], function (){
     Route::get('/', function () {
         return view('marcus-campos/simple-bot::answers');
     });
+
+    Route::match(['get', 'post'], 'hook', 'SimpleBot\App\Controllers\BotController@handle')->name('hook');
 });
