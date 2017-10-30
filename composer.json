@@ -8,8 +8,7 @@
         }
     ],
     "require": {
-        "botman/driver-botframework": "^1.0",
-        "botman/driver-facebook": "^1.2"
+        "botman/driver-botframework": "^1.0"
     },
     "autoload" : {
         "psr-4": {
