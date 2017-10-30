@@ -11,11 +11,11 @@ class BotController extends Controller
 {
     public function handle()
     {
-        DriverManager::loadDriver(\BotMan\Drivers\BotFramework\BotFrameworkDriver::class);
+        DriverManager::loadDriver(\BotMan\Drivers\Facebook\FacebookDriver::class);
 
         $config = [
             'facebook' => [
-                'token' => 'EAAkDsm7f2PUBAJBK5CYdUWvu7FLrauOZCzZCpsIVN4e4hesG0agr4CVZBwWhFfqLXVTH2Ht7bqmIbZCZAc3uSYTeGISjV04mardwt2ktyS7kOMouhRIIoJ2yemZCUUM1hHmqyPc9QacSHrYLKwhsgKg6DbBJRKhODbKOL4S6aLQAZDZD',
+                'token' => 'EAAkDsm7f2PUBACU7udZBd1MVIhZAVjYj6XJZBdeZAvXCDnUNjiDk6iJ43pedNYZAcCUy75qcOOxarXdFTbKylCwp1KjQi4LOkXNF2w8ZBvXBEON3eUW2GMl9M8UNqt4Qb7MxdFTTjru0ynpPJ5I49WlFkElXaMzvII1TZBz0T1jiwZDZD',
                 'verification'=>'gy840pghr0euggju3woifhudsfp',
             ]
         ];
