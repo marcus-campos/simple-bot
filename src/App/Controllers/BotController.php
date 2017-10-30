@@ -16,7 +16,8 @@ class BotController extends Controller
         $config = [
             'facebook' => [
                 'token' => 'EAAkDsm7f2PUBACU7udZBd1MVIhZAVjYj6XJZBdeZAvXCDnUNjiDk6iJ43pedNYZAcCUy75qcOOxarXdFTbKylCwp1KjQi4LOkXNF2w8ZBvXBEON3eUW2GMl9M8UNqt4Qb7MxdFTTjru0ynpPJ5I49WlFkElXaMzvII1TZBz0T1jiwZDZD',
-                'verification'=>'gy840pghr0euggju3woifhudsfp',
+                'app_secret' => 'd374631fa82a58cd7219ebb722c6dc01',
+                'verification'=>'gy840pghr0euggju3woifhudsfp'
             ]
         ];
 
