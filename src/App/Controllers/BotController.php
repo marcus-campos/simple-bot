@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class BotController extends Controller
 {
-    public function handle()
+    public function handle(Request $request)
     {
         DriverManager::loadDriver(\BotMan\Drivers\Facebook\FacebookDriver::class);
 
