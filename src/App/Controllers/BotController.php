@@ -2,14 +2,12 @@
 
 namespace SimpleBot\App\Controllers;
 
-use App\Core\Http\Controllers\Controller;
 use BotMan\BotMan\BotMan;
 use BotMan\BotMan\BotManFactory;
-use Illuminate\Http\Request;
 
-class BotController extends Controller
+class BotController
 {
-    public function handle(Request $request)
+    public function handle()
     {
         DriverManager::loadDriver(\BotMan\Drivers\Facebook\FacebookDriver::class);
 
