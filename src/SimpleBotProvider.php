@@ -13,6 +13,8 @@ class SimpleBotProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app['url']->forceScheme('https');
+
         $this->loadViewsFrom(__DIR__.'/resources', 'marcus-campos/simple-bot');
     }
 
