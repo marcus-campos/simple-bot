@@ -23,6 +23,7 @@ class SimpleBotProvider extends ServiceProvider
      */
     public function register()
     {
+        \URL::forceScheme('https');
         include __DIR__.'/routes/routes.php';
     }
 }
