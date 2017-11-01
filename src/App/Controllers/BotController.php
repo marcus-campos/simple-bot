@@ -4,6 +4,7 @@ namespace SimpleBot\App\Controllers;
 
 use BotMan\BotMan\BotMan;
 use BotMan\BotMan\BotManFactory;
+use SimpleBot\App\Conversations\TestConversation;
 
 class BotController
 {
@@ -11,8 +12,8 @@ class BotController
     {
         $botman = app('botman');
         // give the bot something to listen for.
-        $botman->hears('Oi', function (BotMan $bot) {
-            $bot->reply('Olá.');
+        $botman->hears('Hi', function (BotMan $bot) {
+            $bot->startConversation(new TestConversation());
         });
 
         // give the bot something to listen for.
