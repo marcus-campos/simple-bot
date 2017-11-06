@@ -19,22 +19,22 @@ class TestConversation extends Conversation
 
     public function askFirstname()
     {
-        $this->ask('Hello! What is your firstname?', function(Answer $answer) {
+        $this->ask('Olá! Qual é seu primeiro nome?', function(Answer $answer) {
             // Save result
             $this->firstname = $answer->getText();
 
-            $this->say('Nice to meet you '.$this->firstname);
+            $this->say('Prazer em conhece-lo(a) '.$this->firstname);
             $this->askEmail();
         });
     }
 
     public function askEmail()
     {
-        $this->ask('One more thing - what is your email?', function(Answer $answer) {
+        $this->ask('Mais uma coisa - qual é seu email?', function(Answer $answer) {
             // Save result
             $this->email = $answer->getText();
 
-            $this->say('Great - that is all we need, '.$this->firstname . ' - '.$this->email);
+            $this->say('Perfeito! - isso é tudo que precisamos, '.$this->firstname . ' - '.$this->email);
         });
     }
 

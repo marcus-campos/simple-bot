@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "botman/driver-botframework": "^1.0"
+
     },
     "autoload" : {
         "psr-4": {
