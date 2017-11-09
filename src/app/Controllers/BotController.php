@@ -10,14 +10,15 @@ class BotController
     public function handle(\Request $request)
     {
         $botman = app('botman');
-        // give the bot something to listen for.
+
+        /*  // give the bot something to listen for.
         $botman->hears('Oi', function (BotMan $bot) {
             $bot->startConversation(new TestConversation());
-        });
+        });*/
 
         // give the bot something to listen for.
-        $botman->hears('Cole', function (BotMan $bot) {
-            $bot->reply('Cole.');
+        $botman->hears('Olá', function (BotMan $bot) {
+            $bot->reply('Olá.');
         });
 
         // start listening

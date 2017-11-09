@@ -1,5 +1,5 @@
 @extends('template')
 
 @section('container')
- //BLA BLA
+    Em construção.
 @endsection

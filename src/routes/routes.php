@@ -8,7 +8,7 @@ Route::group(['prefix' =>'app/marcus-campos/simple-bot', 'https' => true], funct
     });
 
     Route::get('/', function () {
-        return view('marcus-campos/simple-bot::answers');
+        return view('marcus-campos/simple-bot::dashboard');
     });
 
     Route::match(['get', 'post'], 'hook', 'SimpleBot\App\Controllers\BotController@handle')->name('hook');
